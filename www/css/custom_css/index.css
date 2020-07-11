@@ -1,0 +1,106 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/*Override BS Class property*/
+.container{
+    height: 100%;
+}
+
+.align-middle-parent{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.align-middle-child{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-box-subwrapper {
+    padding: 10px;
+}
+
+.register-box-subwrapper{
+    padding: 10px;
+}
+
+.bg-custom {
+    background: #007bff !important;
+    position: fixed;
+    width: 100%;
+}
+
+.brand-color, .bar-color {
+    color: white !important;
+}
+
+.border-color{
+    border-color: transparent !important;
+    outline: transparent !important;
+}
+
+a.nav-link {
+    color: white !important;
+}
+
+.bar-color {
+    font-size: 25px;
+}
+
+.icon-color, .greetings {
+    color: #424242;
+    text-align: center;
+}
+
+h5.progresslabel {
+    font-size: 18px !important;
+}
+
+.content-size{
+    width: 90%;
+    margin: auto;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: #2d51ff !important;
+}
+
+a.navbar-brand {
+    color: white !important;
+}
+
+button.navbar-toggler {
+    border: 0;
+    outline: 0;
+}
+
+.user-icons {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ul.task-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.task-list li{
+    background: #f5f5f5;
+    margin: 10px 0;
+    min-height: 5em;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px -5px;
+}
+
+.button-actions{
+    margin: 0 !important;
+}
+
+.btn-edit, .btn-delete {
+    font-size: 10px;
+}

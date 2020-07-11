@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="css/bootstrap_css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom_css/index.css">
+    <link rel="stylesheet" href="css/font_awesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="js/popper_js/popper.min.js"></script>
+    <script src="js/bootstrap_js/bootstrap.min.js"></script>
+    <script src="js/custom_js/config.js"></script>
+    <script src="js/custom_js/getparametername.js"></script>
+    <script src="js/custom_js/task.js"></script>
+    <script src="js/custom_js/dashboard.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">E-task</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!--end navbar-->
+    <div class="container">
+        <div class="align-middle-parent">
+            <div class="align-middle-child">
+                <div class="user-icons"><span class="fa fa-user fa-4x"></span></div>
+                <div class="mb-3"></div>
+                <h3 class="mb-3 greetings">Welcome <span class="account_name"></span>!</h3>
+                <div class="form-group">
+                    <div>
+                        <button class="btn btn-primary btn-block" data-target="#create-task" data-toggle="modal">Create Task</button>
+                    </div>   
+                    <div class="mb-1"></div>                 
+                    <div>
+                        <a href="manage_task.html" class="btn btn-success btn-block">Manage Task</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modals-->
+    <div class="modal fade" id="create-task">
+        <div class="align-middle-parent">
+            <div class="align-middle-child">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Create Task</h4>
+                            <button class="close">x</button>
+                        </div>
+                        <form id="submit-task">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <input type="text" placeholder="Task Code" class="form-control" name="task-code">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Task Name" class="form-control" name="task-name">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="submit">Create Task</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
