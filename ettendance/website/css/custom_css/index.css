@@ -1,0 +1,58 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/*Override BS Class property*/
+.container{
+    height: 100%;
+}
+
+.align-middle-parent{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.align-middle-child{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-box-subwrapper {
+    padding: 10px;
+}
+
+.register-box-subwrapper{
+    padding: 10px;
+}
+
+.bg-custom {
+    background: #007bff !important;
+    position: fixed;
+    width: 100%;
+}
+
+.brand-color, .bar-color {
+    color: white !important;
+}
+
+.border-color{
+    border-color: transparent !important;
+    outline: transparent !important;
+}
+
+a.nav-link {
+    color: white !important;
+}
+
+.bar-color {
+    font-size: 25px;
+}
+
+.icon-color, .greetings {
+    color: #424242;
+    text-align: center;
+}
+
